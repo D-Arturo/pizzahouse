@@ -1,1 +1,1 @@
-# Learning LAravel following a tutorial
+# Learning Laravel following a tutorial
