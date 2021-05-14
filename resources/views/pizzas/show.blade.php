@@ -11,7 +11,7 @@
             <li>{{ $topping }}</li>
         @endforeach
     </ul>
-    <form action="/pizzas/{{ $pizza->id }}" method="POST">
+    <form action="{{ route('pizzas.destroy', $pizza->id) }}" method="POST">
         @csrf {{--Cross-site request forgeries are a type of malicious exploit whereby unauthorized commands are performed on behalf of an authenticated user. --}}
         @method('DELETE') {{-- Sobreescribimos la petición Post para ahora sí asociarla a Delete --}}
         <input type="submit" value="Set Completed Order">
